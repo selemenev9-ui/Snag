@@ -1,0 +1,27 @@
+name: Beta feedback
+description: Report a problem or compare the two designs
+title: "[Beta] "
+body:
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Edition
+      options: [Paper, Classic, Both]
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      placeholder: 0.1.4-beta.1
+  - type: input
+    id: device
+    attributes:
+      label: Phone and Android version
+  - type: textarea
+    id: steps
+    attributes:
+      label: What happened?
+      description: Include steps, expected result and the exact error. Do not include private media or credentials.
+    validations:
+      required: true

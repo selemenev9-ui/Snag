@@ -1,0 +1,23 @@
+<resources>
+    <string name="sticker_window_move">Передвинуть окно стикера</string>
+    <string name="sticker_window_length">Длительность стикера</string>
+    <string name="sticker_window_hint">Двигайте по шкале, чтобы найти момент. Ниже можно сократить длину; максимум — 3 секунды.</string>
+    <string name="settings_title">Настройки</string>
+    <string name="settings_language">Язык</string>
+    <string name="settings_theme">Оформление</string>
+    <string name="settings_system">Как в системе</string>
+    <string name="settings_light">Светлое</string>
+    <string name="settings_dark">Тёмное</string>
+    <string name="settings_beta_note">Бета для Android 10+ на телефонах ARM64. Медиа обрабатываются на телефоне. Нет регистрации и аналитики.</string>
+    <string name="update_check">Проверить обновления</string>
+    <string name="update_checking">Проверяем GitHub…</string>
+    <string name="update_failed">Не удалось проверить обновления. Повторите, когда появится интернет.</string>
+    <string name="update_available">Доступна новая версия.</string>
+    <string name="update_current">У вас актуальная версия.</string>
+    <string name="update_hint">Новые версии проверяются раз в день при открытии Snag.</string>
+    <string name="update_download">Открыть загрузку обновления</string>
+    <string name="update_install_hint">Android попросит подтвердить установку. Выбирайте ту же версию оформления, чтобы сохранить её историю. Движок загрузки обновляется отдельно.</string>
+    <string name="settings_releases">Загрузки и описание обновлений</string>
+    <string name="settings_feedback">Сообщить об ошибке</string>
+    <string name="settings_open_failed">Не удалось открыть браузер.</string>
+</resources>

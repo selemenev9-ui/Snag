@@ -1,0 +1,23 @@
+<resources>
+    <string name="sticker_window_move">Move sticker window</string>
+    <string name="sticker_window_length">Sticker length</string>
+    <string name="sticker_window_hint">Drag along the timeline to find your moment. Shorten it below; the maximum is 3 seconds.</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_theme">Appearance</string>
+    <string name="settings_system">System default</string>
+    <string name="settings_light">Light</string>
+    <string name="settings_dark">Dark</string>
+    <string name="settings_beta_note">Beta for Android 10+ on 64-bit ARM phones. Your media is processed on your phone. There is no account or analytics.</string>
+    <string name="update_check">Check for updates</string>
+    <string name="update_checking">Checking GitHub…</string>
+    <string name="update_failed">Could not check for updates. Try again when you are online.</string>
+    <string name="update_available">A new version is available.</string>
+    <string name="update_current">You have the current version.</string>
+    <string name="update_hint">New versions are checked once a day when you open Snag.</string>
+    <string name="update_download">Open update download</string>
+    <string name="update_install_hint">Android will ask you to confirm installation. Install the same edition to keep its history. The download engine updates separately.</string>
+    <string name="settings_releases">Downloads and release notes</string>
+    <string name="settings_feedback">Report an issue</string>
+    <string name="settings_open_failed">Could not open a browser.</string>
+</resources>

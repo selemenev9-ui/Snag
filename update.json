@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "channel": "beta",
+  "builds": [
+    {
+      "applicationId": "app.snag.paper.debug",
+      "versionCode": 5,
+      "versionName": "0.1.4-beta.1",
+      "url": "https://github.com/selemenev9-ui/Snag/releases/download/v0.1.4-beta.1/Snag-Paper.apk"
+    },
+    {
+      "applicationId": "app.snag.debug",
+      "versionCode": 5,
+      "versionName": "0.1.4-beta.1",
+      "url": "https://github.com/selemenev9-ui/Snag/releases/download/v0.1.4-beta.1/Snag-Classic.apk"
+    }
+  ]
+}
