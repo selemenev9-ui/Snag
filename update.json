@@ -4,17 +4,17 @@
   "builds": [
     {
       "applicationId": "app.snag.paper.debug",
-      "versionCode": 6,
-      "versionName": "0.1.5-beta.1",
-      "url": "https://github.com/selemenev9-ui/Snag/releases/download/v0.1.5-beta.1/Snag-Paper.apk",
-      "sha256": "e7bd05acc44e68c7e77633aadb21645e210ea9858462c3959f405e214efa8a97"
+      "versionCode": 8,
+      "versionName": "0.1.6-beta.1",
+      "url": "https://github.com/selemenev9-ui/Snag/releases/download/v0.1.6-beta.1/Snag-Paper.apk",
+      "sha256": "46a5d89bc781099c3826a007dbeb5ef58a970bfe26c60659e43711ba92ce16e5"
     },
     {
       "applicationId": "app.snag.debug",
-      "versionCode": 6,
-      "versionName": "0.1.5-beta.1",
-      "url": "https://github.com/selemenev9-ui/Snag/releases/download/v0.1.5-beta.1/Snag-Classic.apk",
-      "sha256": "79c1b009e643320b45468cca8f2e6c105e515aaa930861ae25b926ab32b0c572"
+      "versionCode": 8,
+      "versionName": "0.1.6-beta.1",
+      "url": "https://github.com/selemenev9-ui/Snag/releases/download/v0.1.6-beta.1/Snag-Classic.apk",
+      "sha256": "692b1c5be8ffbaf85bd656a96b9774374cf1c3daaeffd2a7b9582fe15db7adc5"
     }
   ]
 }
