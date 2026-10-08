@@ -1,3 +1,13 @@
+# Snag 0.1.5-beta.1 — dismissible undo message
+
+Fixed the “Card removed · Undo” message staying on screen indefinitely. It now disappears automatically and has a close button. Undo still restores the latest removed card. Android accessibility timeout preferences remain respected.
+
+Update the same edition over your existing installation; do not uninstall first. History and appearance settings are preserved. Both Paper and Classic are available below.
+
+**Русский:** исправлена зависающая плашка «Карточка удалена — Отменить». Теперь она исчезает автоматически, а также закрывается крестиком. Отмена удаления работает как прежде. Для обновления скачайте ту же версию оформления и установите поверх приложения, без удаления.
+
+---
+
 # Snag 0.1.4-beta.1
 
 Two working Android editions to compare: **Paper**, the new design, and **Classic**, the earlier design. Both support English and Russian and can be installed together.

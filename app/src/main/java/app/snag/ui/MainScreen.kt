@@ -134,6 +134,9 @@ fun MainScreen(
             val res = snackbarHost.showSnackbar(
                 message = removedMsg,
                 actionLabel = undoLabel,
+                // With an action, Material defaults to Indefinite. Keep undo transient.
+                duration = androidx.compose.material3.SnackbarDuration.Long,
+                withDismissAction = true,
             )
             if (res == androidx.compose.material3.SnackbarResult.ActionPerformed) {
                 vm.undoRemove()

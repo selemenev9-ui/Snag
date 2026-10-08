@@ -6,8 +6,8 @@ Make a video easier to send. Download a supported link, keep a moment, compress 
 
 **Android 10 or later · ARM64 phones · English and Russian in each APK.**
 
-- **[Snag Paper](https://github.com/selemenev9-ui/Snag/releases/download/v0.1.4-beta.1/Snag-Paper.apk)** — the new design, with warm light and dark themes.
-- **[Snag Classic](https://github.com/selemenev9-ui/Snag/releases/download/v0.1.4-beta.1/Snag-Classic.apk)** — the earlier design, for comparison.
+- **[Snag Paper](https://github.com/selemenev9-ui/Snag/releases/download/v0.1.5-beta.1/Snag-Paper.apk)** — the new design, with warm light and dark themes.
+- **[Snag Classic](https://github.com/selemenev9-ui/Snag/releases/download/v0.1.5-beta.1/Snag-Classic.apk)** — the earlier design, for comparison.
 - [All releases and checksums](https://github.com/selemenev9-ui/Snag/releases)
 
 Both editions can be installed together. They have separate private data and history. Saved copies go to the phone's Download/Snag folder. Install the same edition over its previous version to keep its history.
