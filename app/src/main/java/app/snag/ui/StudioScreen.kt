@@ -478,6 +478,7 @@ fun StudioDialog(
                                     style = androidx.compose.ui.graphics.drawscope.Stroke(2.dp.toPx()))
                             }
                             if (format == StudioOp.STICKER) {
+                                val moveLabel = stringResource(R.string.sticker_window_move)
                                 val windowLength = endMs-startMs
                                 val maxStart = (mediaDurMs-windowLength).coerceAtLeast(0f)
                                 androidx.compose.material3.Slider(value=startMs.coerceAtMost(maxStart),
@@ -489,7 +490,7 @@ fun StudioDialog(
                                     colors=androidx.compose.material3.SliderDefaults.colors(
                                         activeTrackColor=Color.Transparent,inactiveTrackColor=Color.Transparent),
                                     modifier=Modifier.fillMaxSize().semantics {
-                                        contentDescription = context.getString(R.string.sticker_window_move)
+                                        contentDescription = moveLabel
                                     })
                             } else RangeSlider(value = startMs..endMs,
                                 onValueChange = { r ->
@@ -507,6 +508,7 @@ fun StudioDialog(
                         Text(stringResource(R.string.studio_selected, fmtMs(((endMs - startMs) / speed).toLong())),
                             style = MaterialTheme.typography.bodySmall, color = cs.onSurfaceVariant)
                         if (format == StudioOp.STICKER) {
+                            val lengthLabel = stringResource(R.string.sticker_window_length)
                             Text(stringResource(R.string.sticker_window_hint),style=MaterialTheme.typography.bodySmall,color=cs.onSurfaceVariant)
                             val maxLength=minOf(mediaDurMs.toFloat(),3000f*speed)
                             val minLength=minOf(500f,maxLength)
@@ -518,7 +520,7 @@ fun StudioDialog(
                                 },valueRange=minLength..maxOf(minLength+.01f,maxLength),
                                 enabled=editable && maxLength>minLength,
                                 modifier=Modifier.fillMaxWidth().semantics {
-                                    contentDescription=context.getString(R.string.sticker_window_length)
+                                    contentDescription=lengthLabel
                                 })
                         }
                     }
