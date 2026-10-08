@@ -3,6 +3,7 @@
 Device: OnePlus 10 Pro 5G, NE2213, Android 16 / API 36. Date: 8 October 2026.
 
 - **42 JVM unit tests passed**, zero failures. Includes newer-version / correct-edition update selection, rejection of untrusted download URLs, and bounded sticker-window movement, shortening and playback-speed cases.
+- Final lint completed successfully with **zero errors**; existing warnings/hints remain.
 - **17 targeted Android tests passed** on Paper before the last accessibility-label and browser-routing polish: real processing/cancellation/save flows, custom-size forecasts, actual resolution choices, sticker-window controls, native language/theme switching and the published update manifest.
 - After making the sticker descriptions configuration-aware, **3 targeted tests passed on each edition**.
 - On the final APKs after adding explicit browser routing, **3 native tests passed on each edition**: English/Russian with light/dark, manifest fetch from the phone, and resolution of release links to a browser/chooser rather than Snag.
