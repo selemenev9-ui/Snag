@@ -24,6 +24,13 @@ private tailrec fun Context.activity(): Activity? = when(this) {
     is Activity -> this; is ContextWrapper -> baseContext.activity(); else -> null
 }
 
+internal fun browserLinkIntent(url: String): Intent =
+    Intent.makeMainSelectorActivity(Intent.ACTION_MAIN,Intent.CATEGORY_APP_BROWSER).apply {
+        action = Intent.ACTION_VIEW
+        data = Uri.parse(url)
+        addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+    }
+
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable fun SettingsSheet(onDismiss: () -> Unit) {
     val context = LocalContext.current
@@ -33,7 +40,7 @@ private tailrec fun Context.activity(): Activity? = when(this) {
     var launchFailed by remember { mutableStateOf(false) }
     val open = { url: String ->
         launchFailed = runCatching {
-            context.startActivity(Intent(Intent.ACTION_VIEW,Uri.parse(url)).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+            context.startActivity(browserLinkIntent(url))
         }.isFailure
     }
     ModalBottomSheet(onDismissRequest=onDismiss) {

@@ -9,6 +9,10 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
 
     <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.APP_BROWSER" />
+        </intent>
         <package android:name="org.telegram.messenger" />
         <intent>
             <action android:name="org.telegram.messenger.CREATE_STICKER_PACK" />
