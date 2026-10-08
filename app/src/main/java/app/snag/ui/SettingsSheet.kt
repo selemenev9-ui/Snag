@@ -71,8 +71,7 @@ internal fun browserLinkIntent(url: String): Intent =
             update.version?.let { Text(it,color=MaterialTheme.colorScheme.primary) }
             Button(onClick={ BetaUpdates.check(context) },enabled=!update.checking,modifier=Modifier.fillMaxWidth().heightIn(min=48.dp),
                 shape=studyShape(16)) { Text(stringResource(R.string.update_check)) }
-            if(update.url!=null) OutlinedButton(onClick={ open(update.url!!) },modifier=Modifier.fillMaxWidth().heightIn(min=48.dp),
-                shape=studyShape(16)) { Text(stringResource(R.string.update_download)) }
+            AppUpdateCard()
             Text(stringResource(R.string.update_install_hint),style=MaterialTheme.typography.bodySmall,
                 color=MaterialTheme.colorScheme.onSurfaceVariant)
             TextButton(onClick={ open(BetaUpdatePolicy.REPO + "/releases") },modifier=Modifier.fillMaxWidth().heightIn(min=48.dp)) {

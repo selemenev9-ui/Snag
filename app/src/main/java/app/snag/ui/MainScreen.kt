@@ -189,6 +189,7 @@ fun MainScreen(
                     }
                 }
             }
+            item { AppUpdateCard(home = true) }
             if (DesignStudy.active) {
                 item { StudyHome(onPickVideo) }
             }

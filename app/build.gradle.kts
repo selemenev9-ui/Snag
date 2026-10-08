@@ -20,8 +20,8 @@ android {
         manifestPlaceholders["snagIcon"] = if (snagDesign == "classic") "@drawable/ic_launcher" else "@drawable/ic_study_$snagDesign"
         minSdk = 29
         targetSdk = 37
-        versionCode = 6
-        versionName = "0.1.5-beta.1"
+        versionCode = 8
+        versionName = "0.1.6-beta.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 

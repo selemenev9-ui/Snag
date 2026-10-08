@@ -113,6 +113,7 @@ class MainActivity : ComponentActivity() {
         super.onResume()
         app.snag.core.Downloader.checkForUpdates(this)
         app.snag.core.BetaUpdates.checkDaily(this)
+        app.snag.core.AppUpdateDownload.resume(this)
         // Clipboard suggest: if the clipboard holds a link, offer a paste chip.
         runCatching {
             val cm = getSystemService(android.content.ClipboardManager::class.java)

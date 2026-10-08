@@ -1,0 +1,16 @@
+<resources>
+    <string name="update_download_native">Download update</string>
+    <string name="update_progress">Downloading update · %1$d%%</string>
+    <string name="update_cancel">Cancel download</string>
+    <string name="update_ready">Update verified and ready to install. Your history and settings will stay.</string>
+    <string name="update_wait_media">Finish your current video task before installing.</string>
+    <string name="update_install">Install update</string>
+    <string name="update_retry">Try again</string>
+    <string name="update_later">Later</string>
+    <string name="update_close">Close</string>
+    <string name="update_download_failed">Could not download or verify the update. Please try again.</string>
+    <string name="update_permission_hint">Allow Snag to install its updates. Android may ask for confirmation. Your files and settings will stay.</string>
+    <string name="update_allow">Allow updates from Snag</string>
+    <string name="update_install_failed">Update was not installed. You can retry or keep using this version.</string>
+    <string name="update_installing">Installing update… Snag may close when the update completes. Open it again from your home screen.</string>
+</resources>

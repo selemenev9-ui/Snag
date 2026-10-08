@@ -1,0 +1,16 @@
+<resources>
+    <string name="update_download_native">Скачать обновление</string>
+    <string name="update_progress">Скачиваем обновление · %1$d%%</string>
+    <string name="update_cancel">Отменить загрузку</string>
+    <string name="update_ready">Обновление проверено и готово к установке. История и настройки сохранятся.</string>
+    <string name="update_wait_media">Дождитесь завершения работы с видео перед установкой.</string>
+    <string name="update_install">Установить обновление</string>
+    <string name="update_retry">Повторить</string>
+    <string name="update_later">Позже</string>
+    <string name="update_close">Закрыть</string>
+    <string name="update_download_failed">Не удалось скачать или проверить обновление. Попробуйте ещё раз.</string>
+    <string name="update_permission_hint">Разрешите Snag устанавливать свои обновления. Android может запросить подтверждение. Ваши файлы и настройки сохранятся.</string>
+    <string name="update_allow">Разрешить обновления из Snag</string>
+    <string name="update_install_failed">Обновление не установлено. Можно повторить попытку или продолжить пользоваться этой версией.</string>
+    <string name="update_installing">Устанавливаем обновление… Snag может закрыться после завершения. Откройте его снова с главного экрана телефона.</string>
+</resources>

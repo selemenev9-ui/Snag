@@ -1,3 +1,17 @@
+# Snag 0.1.6-beta.1 — updates inside the app
+
+- New dismissible update card on the home screen in Paper and Classic.
+- Download updates inside Snag with progress, cancellation and retry; the Android download service keeps the transfer running in the background.
+- Verify SHA-256, package, newer version and matching signing certificate before installation.
+- Install directly from Snag. Android may require one-time permission to install updates. On Android 12+, self-updates request installation without an extra confirmation; the system can still require confirmation.
+- Installation waits until current video work finishes. History, settings and saved media are retained.
+
+Existing 0.1.4/0.1.5 builds need their usual browser download once to receive this updater. Subsequent versions use the new in-app flow. Full APK downloads are still required; no delta-update mechanism is claimed.
+
+**Русский:** обновление теперь видно на главном экране. APK скачивается прямо в Snag с прогрессом и отменой, проверяется перед установкой. Разрешение на обновления выдаётся один раз; при необходимости Android покажет системное подтверждение. Удалять приложение не нужно. Для перехода со старой версии на этот выпуск браузер понадобится последний раз.
+
+---
+
 # Snag 0.1.5-beta.1 — dismissible undo message
 
 Fixed the “Card removed · Undo” message staying on screen indefinitely. It now disappears automatically and has a close button. Undo still restores the latest removed card. Android accessibility timeout preferences remain respected.

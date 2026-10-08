@@ -14,7 +14,8 @@ import kotlinx.coroutines.launch
 import org.json.JSONObject
 
 data class BetaUpdateState(val checking: Boolean = false, val version: String? = null,
-    val url: String? = null, val failed: Boolean = false, val checked: Boolean = false)
+    val url: String? = null, val failed: Boolean = false, val checked: Boolean = false,
+    val code: Int = 0, val sha256: String = "")
 
 object BetaUpdatePolicy {
     const val REPO = "https://github.com/selemenev9-ui/Snag"
@@ -38,11 +39,13 @@ object BetaUpdates {
         if (BuildConfig.SNAG_DESIGN !in setOf("paper", "classic")) return
         val app = context.applicationContext
         val prefs = app.getSharedPreferences("beta_updates", Context.MODE_PRIVATE)
-        if (!force && System.currentTimeMillis() - prefs.getLong("checkedAt",0) < DAY) {
+        if (!force && prefs.getString("sha256", "").orEmpty().length == 64 &&
+            System.currentTimeMillis() - prefs.getLong("checkedAt",0) < DAY) {
             val code = prefs.getInt("code",0)
             val url = prefs.getString("url", "") ?: ""
             if (BetaUpdatePolicy.accepted(BuildConfig.VERSION_CODE,code,BuildConfig.SNAG_DESIGN,url))
-                mutable.value = BetaUpdateState(version=prefs.getString("version", ""),url=url,checked=true)
+                mutable.value = BetaUpdateState(version=prefs.getString("version", ""),url=url,checked=true,
+                    code=code,sha256=prefs.getString("sha256", "") ?: "")
             return
         }
         if (!busy.compareAndSet(false,true)) return
@@ -72,10 +75,13 @@ object BetaUpdates {
                 val code = entry.getInt("versionCode")
                 val version = entry.getString("versionName")
                 val url = entry.getString("url")
+                val sha256 = entry.getString("sha256")
+                require(sha256.matches(Regex("[a-fA-F0-9]{64}")))
                 val available = BetaUpdatePolicy.accepted(BuildConfig.VERSION_CODE,code,BuildConfig.SNAG_DESIGN,url)
-                mutable.value = BetaUpdateState(version=if(available) version else null,url=if(available) url else null,checked=true)
+                mutable.value = BetaUpdateState(version=if(available) version else null,url=if(available) url else null,checked=true,
+                    code=code,sha256=sha256)
                 prefs.edit().putLong("checkedAt",System.currentTimeMillis()).putInt("code",code)
-                    .putString("version",version).putString("url",url).apply()
+                    .putString("version",version).putString("url",url).putString("sha256",sha256).apply()
             } catch (_: Exception) {
                 mutable.value = mutable.value.copy(checking=false,failed=true)
             } finally {
