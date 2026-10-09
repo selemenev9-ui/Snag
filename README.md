@@ -6,8 +6,8 @@ Make a video easier to send. Download a supported link, keep a moment, compress 
 
 **Android 10 or later · ARM64 phones · English and Russian in each APK.**
 
-- **[Snag Paper](https://github.com/selemenev9-ui/Snag/releases/download/v0.1.5-beta.1/Snag-Paper.apk)** — the new design, with warm light and dark themes.
-- **[Snag Classic](https://github.com/selemenev9-ui/Snag/releases/download/v0.1.5-beta.1/Snag-Classic.apk)** — the earlier design, for comparison.
+- **[Snag Paper](https://github.com/selemenev9-ui/Snag/releases/download/v0.1.6-beta.1/Snag-Paper.apk)** — the new design, with warm light and dark themes.
+- **[Snag Classic](https://github.com/selemenev9-ui/Snag/releases/download/v0.1.6-beta.1/Snag-Classic.apk)** — the earlier design, for comparison.
 - [All releases and checksums](https://github.com/selemenev9-ui/Snag/releases)
 
 Both editions can be installed together. They have separate private data and history. Saved copies go to the phone's Download/Snag folder. Install the same edition over its previous version to keep its history.
@@ -29,7 +29,7 @@ For a Telegram video sticker, Snag automatically selects a window of at most 3 s
 
 Tap the gear on the home screen to select **English / Русский / system language** and **light / dark / system appearance**.
 
-Snag checks a small public GitHub update manifest once a day when opened. You can also check manually in Settings. A new version opens the download for your edition; Android asks you to install it. There is no silent app installation. Install over the old version with the same edition and signing certificate; do not uninstall first.
+Snag checks for updates once a day when opened, or manually in Settings. A new version appears on the home screen. Download it inside Snag, then tap Install update. The APK is checked for integrity, edition, version and signing certificate. Android may require one-time permission and installation confirmation; on Android 12+ Snag requests self-update without an extra confirmation when the system allows it. History and settings are retained. Older 0.1.4/0.1.5 versions need their browser download once to receive this updater. Full APK downloads are still required.
 
 The yt-dlp download engine updates separately. It checks for updates when Snag is opened and can recover from certain extractor errors. Website changes, authentication requirements and server restrictions can still affect individual downloads.
 
